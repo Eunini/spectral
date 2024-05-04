@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.main-container {
+  z-index: 0;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-image: url("images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  width: 100%;
+}
+
+.custom-div{
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.custom-h5 {
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 0;
+  margin: 30px auto;
+  font-size: 50px;
+  animation-duration: 4s; /* don't forget to set a duration! */
+}
+.navbar .nav-underline .nav-link {
+  word-spacing: 4rem;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+}
+.navbar .nav-underline .nav-link:hover{
+  opacity: .7;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-color: transparent; /* Set background color to transparent */
+  filter: invert(1); 
+  border: none;
+}
+.custom-div .custom-p {
+  letter-spacing: 2px;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  width: 320px;
+  height: 3px;
+  animation-duration: 5s;
+}
+.custom-div #welcome1{
+  font-size: 30px;
+  padding: 10px;
+
+}
+.custom-div #welcome {
+  animation-duration: 9s;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+.center-div .custom-p {
+  color: white;
+  letter-spacing: 3px;
+  line-height: 5px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.center-div i{
+  padding: 2rem;
+color: white;
+justify-content: center;
+display: flex;
+text-align: center;
+font-size: 20px;
+margin: auto;
+}
+.container-fluid {
+  position: relative;
+  min-height: 500px;
+  background-color: #cf5938;
+  margin: 0;
+  padding: 0;
+  color: white;
+  animation-duration: 12s;
+}
+.intro {
+  margin: auto;
+  padding-top: 150px;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  display: flex;
+  color: white;
+}
+section h3 {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 1.5px;
+  color: white;
+}
+.circle-icons {
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+.navbar-brand img{
+  width: 100px; 
+  height: 100px;  
+}
+.circle {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  border-radius: 50%;
+  outline: none;
+  border: 4px solid white;
+  background: transparent;
+  color: white;
+  margin: 100px auto; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center; /* Horizontally centers the icon */
+  align-items: center; /* Vertically centers the icon */
+}
+.circle i {
+  font-size: 50px;
+}
+.circle:hover {
+  border: none;
+  background: white;
+  color: #A12300;
+}
+section .gallery {
+  margin: 5;
+}
+section .maria {
+  border-top: 3px solid #cf5938;
+  padding: 15px;
+  justify-content: center;
+  margin: 20px auto;
+}
+section .maria img {
+  padding-right: 20px;
+  width: 300px;
+  height: 200px;
+}
+section .story .custom-p {
+  letter-spacing: 1px;
+  
+}
+section .story .custom-h2 {
+  color: #cf5938;
+  font-weight: lighter;
+  line-height: 15px;
+  word-spacing: 2px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.about-us h3{
+  border-bottom: 2px solid white;
+  font-weight: 600;
+}
+.about-us p {
+  padding: 10px;
+  font-weight: 500;
+}
+
+/* For mobile devices with a width up to 767px */
+@media (max-width: 767px) {
+  /* Adjust the width of your content as needed */
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-div .custom-p {
+  width: 220px;
+  height: 2px;
+  }
+  .main-container {
+    min-height: 190vh;
+  }
+  .navbar .nav-underline .nav-link {
+    font-size: 20px;
+  }
+  .navbar-toggler span{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  .button-container {
+    justify-content: flex-end;
+  }
+  .navbar{
+    flex: 5;
+  }
+  .navbar-brand img{
+    width: 70px;
+    height: 70px;
+    left: 0;
+  }
+  .custom-div #welcome1{
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0 auto 10px auto;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  }
+  .custom-div #welcome{
+    font-size: 18px;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .center-div .custom-p {
+    letter-spacing: 1.5px;
+    line-height: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+  }
+  .center-div i{
+    padding: 0;
+    padding-top: 10px;
+    font-size: 12px;
+    
+  }
+  .intro {
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    word-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+  }
+  section div h3 {
+    font-weight: 300;
+    font-size: 16px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+  .circle {
+    width: 100px; 
+    height: 100px; 
+    border: 1.5px solid white;
+    margin: 10px; 
+    display: flex;
+    justify-content: center; /* Horizontally centers the icon */
+    align-items: center; /* Vertically centers the icon */
+  }
+  .circle i {
+    font-size: 25px;
+  }
+  .circle:hover {
+    border: none;
+    background: white;
+    color: #A12300;
+  }
+  section .story .custom-h2 {
+    color: #A12300;
+    font-weight: lighter;
+    line-height: 15px;
+    word-spacing: 2px;
+  }
+  section .maria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 3px solid #A12300;
+    padding: 10px;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center
+  }
+  section .maria img {
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    width: 200px;
+    height:170px;
+  }
+  section .story .custom-p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    letter-spacing: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  section .story .custom-h2 {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 15px;
+    word-spacing: 1px;
+  }
+  section .gallery {
+    width: 100%;
+  }
+  .about-us{
+    
+    margin: 10px auto;
+    padding: 10px;
+    
+  }
+  .about-us h3{
+    border-bottom: 2px solid white;
+    font-weight: 500;
+  }
+  .about-us p {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .big-container .image img{
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+    flex-direction: column;  
+    display: flex;
+  }
+  
+}
+
+/* contact us */
+section .big-container {
+  z-index: 1;
+  margin: 50px 0 10px 0;
+  padding: 10px;
+}
+.big-container .section-title {
+  font-size: 2rem;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+  width: 180px;
+  margin: 20px auto;
+  display: flex;
+  left: 0;
+}
+
+.section-description {
+  z-index: 1;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.big-container {
+  display: flex;
+  flex-direction: row;
+}
+.big-container .img img{
+  width: 100px;
+  height: 100px;
+}
+.contact-form {
+  width: 100%;
+  justify-content: left;
+  left: 0;
+  flex-direction: column;  
+  display: flex;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  background-color: #e9e9e9;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.submit-button {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #A12300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px;
+}
+
+.submit-button:hover {
+  background-color: #A12300;
+}
+
+.response {
+  text-align: center;
+  margin-top: 20px;
+}
+footer{
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+.animated-text {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #eafd40, #daff94, #fffb14); /* Define the gradient colors */
+  -webkit-background-clip: text; /* Apply text as the background clip for WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Make text transparent so the gradient shows through */
+  animation: gradientAnimation 5s infinite; /* Apply the animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Start position of the gradient */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position of the gradient */
+  }
+  100% {
+    background-position: 0% 50%; /* End position of the gradient */
+  }
+}
+
+#scrollUpBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow:
+  0.3px 1.2px 13.9px rgba(0, 0, 0, 0.107),
+  0.7px 3px 9.7px rgba(0, 0, 0, 0.105),
+  1.4px 5.6px 12.6px rgba(0, 0, 0, 0.098),
+  2.5px 10.1px 28.2px rgba(0, 0, 0, 0.089),
+  4.6px 18.8px 63.4px rgba(0, 0, 0, 0.08),
+  11px 45px 133px rgba(0, 0, 0, 0.07)
+;
+}
+#scrollUpBtn i {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
