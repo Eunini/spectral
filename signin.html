@@ -28,28 +28,28 @@
                 <input type="submit" value="Login" class="btn">
                 <p class="social-text">Or sign in with social platform</p>
                 <div class="social-media">
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-google"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
-                <p class="acct-text">Don't have an account? <a href="#" id="sign-up-btn2">Signup</a></p>
+                <p class="acct-text">Don't have an account? <a href="" id="sign-up-btn2" style="color: #cf5938;">Signup</a></p>
             </form>
 
             <!-- sign up -->
 
-            <form action="/" class="sign-up-form">
+            <form action="" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
 
                 <div class="input-field">
@@ -70,32 +70,34 @@
                 <input type="submit" value="Signup" class="btn">
                 <p class="social-text">Or sign in with social platform</p>
                 <div class="social-media">
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-google"></i>
                     </a>
 
-                    <a href="" class="social-icon">
+                    <a href="signin.html" class="social-icon">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
-                <p class="acct-text">Already have an account? <a href="#" id="sign-in-btn2" style="color: #A12300;">Signup</a></p>
+                <p class="acct-text">Already have an account? <a href="class"  class="signme" style="color: #cf5938;"  id="sign-in-btn2">Signin</a></p>
             </form>
 
         </div>
+
         <div class="panels-container">
+            <!-- left panel -->
             <div class="panel left-panel">
                 <div class="content">
                     <h3>Member of Brand</h3>
-                <p>Welcome to SPECTRAL! Are you already a member of our creative community? Join us to unlock exclusive benefits, personalized recommendations, and exciting design insights tailored just for you. Let's make your design journey even more inspiring together. Are you in?</p>
-                <button class="btn" id="sign-in-btn">SignIn</button>
+                    <p>Welcome to SPECTRAL! Are you already a member of our creative community? Join us to unlock exclusive benefits, personalized recommendations, and exciting design insights tailored just for you. Let's make your design journey even more inspiring together. Are you in?</p>
+                    <button class="btn" id="sign-in-btn">SignIn</button>
                 </div>
             </div>
         
@@ -103,8 +105,8 @@
             <div class="panel right-panel">
                 <div class="content">
                     <h3>New to Brand</h3>
-                <p>Step into a world where creativity knows no bounds and design is more than just a concept - it's a way of life. Whether you're an aspiring artist, a seasoned designer, or simply someone with an eye for aesthetics, you've found your creative home.</p>
-                <button class="btn" id="sign-up-btn">Signup</button>
+                    <p>Step into a world where creativity knows no bounds and design is more than just a concept - it's a way of life. Whether you're an aspiring artist, a seasoned designer, or simply someone with an eye for aesthetics, you've found your creative home.</p>
+                    <button class="btn" id="sign-up-btn">Signup</button>
                 </div>
             </div>
         </div>
@@ -113,8 +115,10 @@
     const sign_in_btn = document.querySelector("#sign-in-btn");
     const sign_up_btn = document.querySelector("#sign-up-btn");
     const container = document.querySelector(".container");
-    const sign_in_btn2 = document.querySelector("#sign-in-btn2");
-    const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+
+
+    const sign_in_btn2 = document.querySelector(".signme");
+    const sign_up_btn2 = document.querySelector("#sign-in-btn2");
 
 
     sign_up_btn.addEventListener("click", () => {
@@ -126,10 +130,10 @@
     });
 
     sign_up_btn2.addEventListener("click", () => {
-        container.classList.add("sign-up-mode2");
+        container.classList.add("sign-in-form");
     });
 
-    sign_in_btn2.addEventListener("click", () => {
+    sign_up_btn2.addEventListener("click", () => {
         container.classList.remove("sign-up-mode2");
     });
 </script>
