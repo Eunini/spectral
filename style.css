@@ -39,8 +39,11 @@
 }
 .navbar-nav li a {
   color: white; /* Change text color to white */
+  transition: 1.1s ease-in-out;
 }
-
+.navbar-nav li a{
+  color: #fff;
+}
 .nav-link {
   word-spacing: 4rem;
   letter-spacing: 2px;
@@ -234,13 +237,17 @@ section .story .custom-h2 {
     display: flex;
     flex-direction: column;
   }
-  
+  .custom-img {
+    width: 80px;
+    position: relative;
+    height: 80px;
+  }
   .custom-div .custom-p {
   width: 220px;
   height: 2px;
   }
   .main-container {
-    min-height: 140vh;
+    min-height: 160vh;
   }
   .navbar .nav-underline .nav-link {
     font-size: 20px;
@@ -311,7 +318,7 @@ section .story .custom-h2 {
     width: 80px; 
     height: 80px; 
     border: 1.5px solid white;
-    margin: 10px 0; 
+    margin: 0; 
     display: flex;
     justify-content: center; /* Horizontally centers the icon */
     align-items: center; /* Vertically centers the icon */
