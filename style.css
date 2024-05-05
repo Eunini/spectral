@@ -247,7 +247,7 @@ section .story .custom-h2 {
   height: 2px;
   }
   .main-container {
-    min-height: 130vh;
+    min-height: 100vh;
   }
   .navbar .nav-underline .nav-link {
     font-size: 20px;
@@ -489,7 +489,9 @@ section .big-container {
   border-radius: 5px;
   width: 100%;
 }
-
+.contact-form textarea{
+  color: black:
+}
 .contact-form textarea {
   height: 150px;
 }
