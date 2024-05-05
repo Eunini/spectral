@@ -247,7 +247,7 @@ section .story .custom-h2 {
   height: 2px;
   }
   .main-container {
-    min-height: 160vh;
+    min-height: 130vh;
   }
   .navbar .nav-underline .nav-link {
     font-size: 20px;
